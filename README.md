@@ -13,7 +13,13 @@ O SMartyProcess é um processo sistemático que guia o usuário na identificaç�
 
 SMarty 5.1 é resumida conforme apresentado na Figura 2. Nela podemos observar os modelos da UML suportados, bem como um resumo das diretrizes para cada modelo. As setas indicam o processo incremental e interativo entre o SMartyProfile e o SMartyProcess, garantindo a evolução e identificação de novas variabilidades por meio dos modelos UML apoiados pelas diretrizes.
 
+<p align="center"><a href="http://www.din.uem.br/~smarty/smarty.html" target="_blank"><img src="http://www.din.uem.br/~smarty/img/smarty_g.jpg" width="400"></a></p>
+<p> <i>Figura 2 - Visão geral da Abordagem SMarty 5.1.</i></p>
+
+
+
 [1] Oliveira Junior, E. A.; Gimenes, I. M. S. & Maldonado, J. C. Systematic Evaluation of Software Product Line Architectures Journal of Universal Computer Science, 2013, 19, 25-52.
+
 [2] Oliveira Junior, E. A.; Gimenes, I. M. S.; Huzita, E. H. M. & Maldonado, J. C. A Variability Management Process for Software Product Lines Proc. Conf. of the Centre for Advanced Studies on Collaborative research, IBM Press, 2005, 225-241.
 
 - [Página principal do SMarty Modeling](http://www.din.uem.br/~smarty/smarty.html)
