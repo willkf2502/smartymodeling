@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://www.inffoc.com.br/logo-smartymodeling.png" width="400"></a></p>
+<p align="center"><a href="http://www.din.uem.br/~smarty/smarty.html" target="_blank"><img src="https://www.inffoc.com.br/logo-smartymodeling.png" width="400"></a></p>
 
 
 ## SMartyModeling - Stereotype-based Management of Variability
