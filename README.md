@@ -1,64 +1,19 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://www.inffoc.com.br/logo-smartymodeling.png" width="400"></a></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
-## About Laravel
+## SMartyModeling - Stereotype-based Management of Variability
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+A abordagem Stereotype-based Management of Variability (SMarty) [1,2], possui suporte, em sua versão 5.1, a modelos UML de casos de uso, classes, atividades, componentes e sequência.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+SMarty é composta de um perfil UML, o SMartyProfile, e do processo denominado SMartyProcess. SMarty tem como objetivo permitir que as variabilidades de uma LPS possam ser gerenciadas de forma clara e explícita em modelos UML, e guia o usuário por meio do SMartyProcess na identificação e representação de variabilidades em modelos UML de uma LPS.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+O perfil SMartyProfile é formado por um conjunto de estereótipos e meta-atributos para representar variabilidades em modelos UML de LPS. Por meio da UML e seu mecanismo de perfil SMarty permite a representação explícita de variabilidades.
 
-## Learning Laravel
+O SMartyProcess é um processo sistemático que guia o usuário na identificação, delimitação, representação, rastreamento de variabilidades e análise de configurações de produtos de uma LPS. Nele há um conjunto de diretrizes que permitem ao usuário a aplicação dos estereótipos do SMartyProfile de forma clara e objetiva.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+SMarty 5.1 é resumida conforme apresentado na Figura 2. Nela podemos observar os modelos da UML suportados, bem como um resumo das diretrizes para cada modelo. As setas indicam o processo incremental e interativo entre o SMartyProfile e o SMartyProcess, garantindo a evolução e identificação de novas variabilidades por meio dos modelos UML apoiados pelas diretrizes.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+[1] Oliveira Junior, E. A.; Gimenes, I. M. S. & Maldonado, J. C. Systematic Evaluation of Software Product Line Architectures Journal of Universal Computer Science, 2013, 19, 25-52.
+[2] Oliveira Junior, E. A.; Gimenes, I. M. S.; Huzita, E. H. M. & Maldonado, J. C. A Variability Management Process for Software Product Lines Proc. Conf. of the Centre for Advanced Studies on Collaborative research, IBM Press, 2005, 225-241.
 
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- [Página principal do SMarty Modeling](http://www.din.uem.br/~smarty/smarty.html)
