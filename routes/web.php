@@ -13,8 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/uml', function () {
+    return view('uml.index');
+});
 Route::get('/', function () {
-    return view('welcome');
+    return view('uml.index');
 });
 
 Auth::routes();
