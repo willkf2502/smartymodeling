@@ -5,7 +5,6 @@ namespace App\Utils;
 class View{
 
     //-----------------------------------------------------------------------------
-
     /**
      * Method that returns the content of a view
      * @param string
