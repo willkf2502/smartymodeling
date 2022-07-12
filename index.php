@@ -1,8 +1,14 @@
 <?php 
+
 require __DIR__."/vendor/autoload.php";
+
 
 use App\Controller\Pages\Home;
 
-echo Home::getHome();
+$request = new App\Http\Request;
 
+//dd($request);
+
+echo Home::getHome();
+exit;
 ?>

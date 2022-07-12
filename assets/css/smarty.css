@@ -1,38 +1,76 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 /*Initial page logo*/
 .logo{
     height: 30px;
     width: auto;
 }
 
-body *{
-    font-family: 'Titillium Web', sans-serif;
+.account_button, .account_button_internal{
+    padding: 15px;
+    border-radius: 40px;
+    color:#fff;
+    outline: auto;
 }
 
-/*.navbar-home - used in not logged menu*/
-.navbar-home{
-    font-size: 20px;
-}
-
-/* a full filled submenu */
-.navbar-submenu{
-    margin-left:1vw !important;
-    padding-left: 5px !important; 
-    width:98vw !important
-}
-
-@media only screen and (max-width: 600px) {
-    .navbar-submenu{
-        margin-left:1vw !important;
-        padding-left: 5px !important; 
-        width:96vw !important
+@media only screen and (max-width : 600px) {
+    .account_button{
+        display: none;
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .dropdown-item{
-        white-space: normal !important;
+body *{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*.navbar-home and divider - used in not logged menu*/
+.navbar-home{
+    font-size: 16px;
+    border-bottom: 1px solid #f2f2f2;    
+    background-color: #fff;
+    font-weight: 600;
+}
+
+.divider{
+    display: block;
+    margin-top: 100px;
+}
+
+.home-center{
+    max-width: 80vw !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media only screen and (min-width : 600px) {
+    .navbar-home{
+        height: 100px !important;
+    }
+    .divider{
+        display: block;
+        margin-top: 110px;
+    }
+}
+
+@media only screen and (min-width : 600px) {
+    .dropdown-menu, .mega-content{
+        border-radius: 0px 0px 0px 0px !important;
+        border-top: 0px !important;
+        background-color: #fff;
+    }
+
+    .mega-content{
+        background-color: #fff !important;
+        width: 100vw !important;
+        min-height: 70vh;
+        margin-top: -10px;
+        z-index: 999;
+        padding: 10px;
+    }
+}
+@media only screen and (max-width : 600px) {
+    .mega-content{
+        display: none;
     }
 }

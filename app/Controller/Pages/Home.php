@@ -6,7 +6,8 @@ use App\Utils\View;
 class Home extends Page{
 
     /**
-     * Method to return the content of our home 
+     * en-us: Method to return the content of our "home" 
+     * pt-br: Método que retorna o conteúdo da nossa "home"
      * @return string
      */
 
