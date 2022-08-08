@@ -1,0 +1,11 @@
+/* Logo at the menu */
+
+.smty-logo{
+    width: 100px;
+}
+
+/* Top menu style (navbar) */
+.smty-navmenu{
+    border-bottom: 1px solid #d3d3d3 !important;
+}
+
