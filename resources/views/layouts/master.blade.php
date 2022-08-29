@@ -19,7 +19,7 @@
     <link href="{{asset('assets/images/favicon.png')}}" rel="icon" />
 
     <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
-
+    <script src="{{asset('assets/plugins/jquery/jquery-3.6.1.min.js')}}"></script>
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     
@@ -36,4 +36,26 @@
     
     
 </body>
+
+<script>
+
+    $("#mainContent").hide();
+    $("#mainContent").fadeIn();
+
+
+    // Add slideDown animation to Bootstrap dropdown when expanding.
+    $('.dropdown').on('show.bs.dropdown', function() {
+        $(this).find('.dropdown-menu').first().stop(true, true).slideDown({duration: 100});
+    });
+        
+        // Add slideUp animation to Bootstrap dropdown when collapsing.
+    $('.dropdown').on('hide.bs.dropdown', function() {
+        $(this).find('.dropdown-menu').first().stop(true, true).slideUp({duration: 100});
+    });
+    
+    
+</script>
+    
+
+
 </html>

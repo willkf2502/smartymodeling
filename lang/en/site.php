@@ -13,9 +13,10 @@
         //MENU-END
 
         //SLIDE-BEGIN
-        'slide-smarty-name'=> '<span class="smty-title-smarty-brown">SMarty</span> (<span class="smty-title-smarty-brown">S</span>tereotype-based <span class="smty-title-smarty-brown">Ma</span>nagement of Va<span class="smty-title-smarty-brown">r</span>iabili<span class="smty-title-smarty-brown">ty</span>)',
+        'slide-smarty-name'=> 'Stereotype-based Management of Variability',
 
-        'intro' => 'Is a proposed approach to managing variability, being composed of a UML profile, the <b class="smty-title-smarty-blue">SMartyProfile</b>, and a process, the <b class="smty-title-smarty-green">SMartyProcess</b>.',
+
+        'intro' => '<span class="smty-title-smarty-brown">SMarty</span> is a proposed approach to managing variability, being composed of a UML profile, the <b class="smty-title-smarty-blue">SMartyProfile</b>, and a process, the <b class="smty-title-smarty-green">SMartyProcess</b>.<br /><br />SMarty is made up of a <span class="smty-uml">UML</span> profile, the <i>SMartyProfile</i>, and the process called <i>SMartyProcess</i>. SMarty aims to allow the variability of an SPL to be managed clearly and explicitly in <span class="smty-uml">UML</span> models, and guides the user through <i>SMartyProcess</i> in the identification and representation of variabilities in <span class="smty-uml">UML</span> models of an SPL.',
 
         'spl-title' => 'Software Product Line',
 

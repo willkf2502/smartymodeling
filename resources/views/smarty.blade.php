@@ -4,7 +4,7 @@
 
 <div style="margin-bottom: 100px"></div>
 
-<div class="container fadeIn first">
+<div class="container-fluid fadeIn ">
     <div class="col-md-12"  >
         <img src="{{asset('assets/images/logo_smarty_modeling.png')}}" alt="">  
     </div>

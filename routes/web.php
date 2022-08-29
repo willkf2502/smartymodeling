@@ -14,8 +14,10 @@ use Illuminate\Http\Request;
 */
 
 Route::get('/', function () {
+    @session_start();
+    app()->setlocale($_SESSION['locale'] ?? 'br' );
     return view('index');
-});
+})->name('begin');;
 
 
 //-------------------------------------------------------------------------
@@ -23,7 +25,8 @@ Route::get('/', function () {
 //-------------------------------------------------------------------------
 Route::get('/BR', function (Request $request) {
     app()->setlocale('br');
-    $rota = $request->route();
+    @session_start();
+    $_SESSION['locale'] = app()->getLocale();
     return view('index');
 })->name('BR');
 
@@ -32,16 +35,21 @@ Route::get('/BR', function (Request $request) {
 //-------------------------------------------------------------------------
 Route::get('/EN', function (Request $request) {
     app()->setlocale('en');
+    @session_start();
+    $_SESSION['locale'] = app()->getLocale();
     return view('index');
 })->name('EN');
 //-------------------------------------------------------------------------
 
 Route::get('/pappers', function () {
+    @session_start();
+    app()->setlocale($_SESSION['locale'] ?? 'br');
     return view('pappers');
 })->name('pappers');
 
 Route::get('/smarty', function () {
-    app()->setlocale('br');
+    @session_start();
+    app()->setlocale($_SESSION['locale'] ?? 'br');
     return view('smarty');
 })->name('smarty');
 

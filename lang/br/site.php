@@ -12,9 +12,9 @@
         //MENU-END
 
         //SLIDE-BEGIN
-        'slide-smarty-name'=> '<span class="smty-title-smarty-brown">SMarty</span> (<span class="smty-title-smarty-brown">S</span>tereotype-based <span class="smty-title-smarty-brown">Ma</span>nagement of Va<span class="smty-title-smarty-brown">r</span>iabili<span class="smty-title-smarty-brown">ty</span>)',
+        'slide-smarty-name'=> ' Stereotype-based Management of Variability',
 
-        'intro' => 'É uma abordagem proposta para o gerenciamento de variabilidades, sendo composta de um perfil UML, o <b class="smty-title-smarty-blue">SMartyProfile</b>, e um processo, o <b class="smty-title-smarty-green">SMartyProcess</b>.',
+        'intro' => '<span class="smty-title-smarty-brown">SMarty</span> uma abordagem proposta para o gerenciamento de variabilidades, sendo composta de um perfil UML, o <b class="smty-title-smarty-blue">SMartyProfile</b>, e um processo, o <b class="smty-title-smarty-green">SMartyProcess</b>.<br /> <br /> SMarty é composta de um perfil <span class="smty-uml">UML</span>, o <i>SMartyProfile</i>, e do processo denominado <i>SMartyProcess</i>. SMarty tem como objetivo permitir que as variabilidades de uma LPS possam ser gerenciadas de forma clara e explícita em modelos <span class="smty-uml">UML</span>, e guia o usuário por meio do <i>SMartyProcess</i> na identificação e representação de variabilidades em modelos <span class="smty-uml">UML</span> de uma LPS.',
 
         'spl-title' => 'Linha de Produto de Software',
         
