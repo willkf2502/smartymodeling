@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Http\Request;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,27 +14,36 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return redirect(route('BR'));
+    return view('index');
 });
 
 
 //-------------------------------------------------------------------------
 //PORTUGUÊS
 //-------------------------------------------------------------------------
-Route::get('/BR', function () {
+Route::get('/BR', function (Request $request) {
     app()->setlocale('br');
-    return view('welcome');
+    $rota = $request->route();
+    return view('index');
 })->name('BR');
 
 //-------------------------------------------------------------------------
 //INGLÊS
 //-------------------------------------------------------------------------
-Route::get('/EN', function () {
+Route::get('/EN', function (Request $request) {
     app()->setlocale('en');
-    return view('welcome');
+    return view('index');
 })->name('EN');
 //-------------------------------------------------------------------------
 
+Route::get('/pappers', function () {
+    return view('pappers');
+})->name('pappers');
+
+Route::get('/smarty', function () {
+    app()->setlocale('br');
+    return view('smarty');
+})->name('smarty');
 
 Auth::routes();
 
