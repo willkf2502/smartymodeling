@@ -1,0 +1,18 @@
+Angular CLI: 14.2.1
+Node: 16.16.0
+Package Manager: npm 8.19.1
+
+Angular:
+
+Package                      Version
+------------------------------------------------------
+@angular-devkit/architect    0.1402.1 (cli-only)
+@angular-devkit/core         14.2.1 (cli-only)
+@angular-devkit/schematics   14.2.1 (cli-only)
+@schematics/angular          14.2.1 (cli-only)
+
+jointjs - License Mozilla 2.0
+https://github.com/clientIO/joint
+
+ngx-bootstrap
+https://www.npmjs.com/package/ngx-bootstrap
