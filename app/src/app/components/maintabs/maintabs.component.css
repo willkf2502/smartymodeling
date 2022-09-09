@@ -1,0 +1,39 @@
+* {
+    font-size: 9pt;
+}
+/*hack to stretch uml nav button*/
+.btn-uml{
+    width: 50px;
+}
+/*hack to stretch requirement nav button*/
+.btn-requirement{
+    width: 120px;
+}
+
+.nav-item button.nav-link{
+    font-size: 9pt;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav-item .nav-link.active{
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 100%);
+    font-weight: 600;
+    color:darkred;
+    border-bottom: 1px solid #ccc;
+}
+.nav-link{
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(250,250,250,1) 100%);
+    color:#555;
+    border:1px solid #ccc
+}
+
+
+.tab-content{
+    padding: 8px;
+    border: 1px solid #f2f2f2;
+}
