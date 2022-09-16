@@ -1,13 +1,30 @@
 <app-menu></app-menu>
 
-<section class="container-fluid row" id="main-app">
+<section class="d-flex" id="main-app">
 
-  <div class="col-md-3 diagram-tabs">
+  <div class="diagram-tabs">
     <app-maintabs></app-maintabs>
   </div>
 
-  <div class="col-md-9 diagram-draw">
+  <div class=" flex-grow-1">
+    
+    <div class="d-flex flex-column">
+
+      <!-- PLACE WHERE WE RENDER THE TOOLBAR OF DIAGRAM-->
+      <div class="">
+        <app-draw-toolbar ></app-draw-toolbar>
+      </div>
+
+      <!-- PLACE WHERE WE DRAW DIAGRAMS-->
+      <div class="">
+        <app-draw-papper ></app-draw-papper>
+      </div>
+
+    </div>
+      
     
   </div>
+
+  
 
 </section>

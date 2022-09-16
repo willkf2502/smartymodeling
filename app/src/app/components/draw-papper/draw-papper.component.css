@@ -1,0 +1,14 @@
+*{
+    font-size: 10pt;
+}
+
+#paper{
+    min-width: 100%;
+    max-height: calc(100vh - 75px); /* (  44 do menu principal e 30 da toolbar ) */
+    overflow: scroll;
+}
+
+.joint-type-uml-abstract{
+    border: 1px solid #000 !important;
+}
+

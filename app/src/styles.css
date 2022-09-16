@@ -10,21 +10,30 @@
 
 body{
     background-image: url('src/assets/images/grid_dashed.png');
-    height: 100% !important;
+    overflow: hidden;
 }
-
 .diagram-draw{    
-    border-left: 2px solid #ccc;        
+    width: calc(100% + 20px);
+    overflow: auto; 
+    height: calc(100vh - 44px); /* 44 px is the menu height + menu top margin */
+    margin-top: -8px;
+    margin-left: -15px
 }
 
 .diagram-draw, .diagram-tabs{
     overflow: auto;
     min-zoom: 100%;
-    height: calc(100vh - 44px); /* 44 px is the menu height + menu top margin */
+    
 }
 
-.diagram-tabs{    
-    padding: -10px;
+.diagram-tabs{
+    background-color: #fcfcfc;    
+    padding: 4px;
     padding-top: 20px;
     max-width: 350px !important;
+    border-right: 1px solid #ddd;
+}
+
+.diagram-toolbar{
+    padding:0px
 }

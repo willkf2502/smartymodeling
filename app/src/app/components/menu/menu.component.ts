@@ -10,6 +10,11 @@ export class MenuComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+  //menu animation
+  //@ts-ignore
+  require('../../../assets/scripts/smarty-menu-animations.js')
+
   }
 
 }

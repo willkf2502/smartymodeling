@@ -35,5 +35,56 @@
 
 .tab-content{
     padding: 8px;
-    border: 1px solid #f2f2f2;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    min-height: 200px;
+    max-height: 200px;
+    background-color: #fff;
+    overflow: auto;
+}
+
+/* Remove default bullets */
+ul, #myUL {
+    list-style-type: none;
+}
+
+/* Remove margins and padding from the parent ul */
+#myUL {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the caret/arrow */
+.caret {
+    cursor: pointer;
+    user-select: none; /* Prevent text selection */
+}
+
+/* Create the caret/arrow with a unicode, and style it */
+.caret::before {
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+    font-weight: 500;
+    transition: transform 0.2s;
+}
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+.caret-down::before {
+    transform: rotate(90deg);
+    transition: transform 0.2s;
+}
+
+/* Hide the nested list */
+.nested {
+    display: none;
+    transition: display 0.5s;
+}
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.activated{ 
+    display: block;
+    transition: display 0.5s;
 }

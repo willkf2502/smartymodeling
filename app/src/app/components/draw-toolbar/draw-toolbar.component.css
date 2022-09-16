@@ -1,0 +1,16 @@
+* {
+    font-size: 10.5pt;
+}
+.nav-smarty{
+    border-bottom: 1px solid #ddd;    
+    background: #fdfdfd;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 100%);
+    height: 32px;
+}
+
+.nav-item a, .nav-link{
+    margin-top: -2px;
+    font-size: 9pt !important;
+    color: #000
+}
+

@@ -3,6 +3,9 @@
   "compileOnSave": false,
   "compilerOptions": {
     "allowJs": true,
+    "strictPropertyInitialization": false,
+    "skipLibCheck": true,
+    "jsx": "preserve",
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
