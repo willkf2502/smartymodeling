@@ -16,3 +16,5 @@ https://github.com/clientIO/joint
 
 ngx-bootstrap
 https://www.npmjs.com/package/ngx-bootstrap
+
+@types/svg-pan-zoom

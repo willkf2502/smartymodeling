@@ -10,6 +10,8 @@ export class DrawToolbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+    
   }
 
 }

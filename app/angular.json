@@ -30,7 +30,8 @@
             ],
             "scripts": [
               "src/external/bootstrap@5.2.0/js/bootstrap.bundle.min.js",
-              "node_modules/jquery/dist/jquery.min.js"
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/external/svg-pan-zoom/svg-pan-zoom.js"
             ]
           },
           "configurations": {

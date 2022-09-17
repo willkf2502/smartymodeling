@@ -22,7 +22,6 @@ export class DrawPapperComponent implements OnInit {
     function start(){
         //@ts-ignore
         const joint = require('../../../../src/instances/smarty-jointjs/js/smarty-joint.js');
-            
         var graph = new joint.dia.Graph();
 
         new joint.dia.Paper({
@@ -283,9 +282,41 @@ export class DrawPapperComponent implements OnInit {
 
     }
 
+    //run grafic
     start();
+
     
-    
+    var svgElement = document.querySelector('#v-2')
+    //@ts-ignore
+    var panZoom = svgPanZoom(svgElement)
+    // or
+    //@ts-ignore
+    var pan = svgPanZoom(svgElement, {
+       //viewportSelector: '.svg-pan-zoom_viewport',
+        panEnabled: true,
+        controlIconsEnabled: true,
+        zoomEnabled: true,
+        dblClickZoomEnabled: true,
+        mouseWheelZoomEnabled: true,
+        preventMouseEventsDefault: true,
+        zoomScaleSensitivity: 0.5,
+        minZoom: 0.5,
+        maxZoom: 10,
+        fit: true,
+        contain: true,
+        center: true,
+        refreshRate: 'auto',
+        beforeZoom: function(){},
+        onZoom: function(){},
+        beforePan: function(){},
+        onPan: function(){},
+        onUpdatedCTM: function(){},
+        customEventsHandler: {},
+        eventsListenerElement: null,
+    });
+
+    pan.zoomOut();
+
   }
 
 }
