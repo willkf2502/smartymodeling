@@ -21,59 +21,23 @@ export class DrawPapperComponent implements OnInit {
     //INCIALIZA O EXEMPLO
     function start(){
         //@ts-ignore
-        const joint = require('../../../../src/instances/smarty-jointjs/js/smarty-joint.js');
+        const joint = require('src/instances/smarty-jointjs/js/smarty-joint.js');
         var graph = new joint.dia.Graph();
 
-        new joint.dia.Paper({
+        var paper =  new joint.dia.Paper({
             el: document.getElementById('paper'),
+            width:1000,
+
             gridSize: 0.5,
             model: graph
         });
 
         var uml = joint.shapes.uml;
 
-        
-
         //CLASSES UML
         var classes = {
 
             
-            mammals: new uml.Interface({
-                position: { x:600  , y: 50 },
-                size: { width: 240, height: 100 },
-                name: 'Specie',
-                attributes: ['dob: Date'],
-                methods: ['+ setDateOfBirth(dob: Date): Void','+ getAgeAsDays(): Numeric'],
-                attrs: {
-                    '.uml-class-name-rect': {
-                        fill: '#feffe0',
-                        stroke: '#000000',
-                        'stroke-width': 0.5
-                    },
-                    '.uml-class-attrs-rect': {
-                        fill: '#feffe0',
-                        stroke: '#000000',
-                        'stroke-width': 0.5
-                    },
-                    '.uml-class-methods-rect': {
-                        fill: '#feffe0',
-                        stroke: '#000000',
-                        'stroke-width': 0.5
-                    },
-                    '.uml-class-attrs-text': {
-                        ref: '.uml-class-attrs-rect',
-                        'ref-y': 0.5,
-                        'y-alignment': 'middle'
-                    },
-                    '.uml-class-methods-text': {
-                        ref: '.uml-class-methods-rect',
-                        'ref-y': 0.5,
-                        'y-alignment': 'middle'
-                    }
-
-                }
-            }),
-
             mammal: new uml.Mandatory({
                 position: { x:300  , y: 50 },
                 size: { width: 240, height: 100 },
@@ -256,11 +220,9 @@ export class DrawPapperComponent implements OnInit {
 
         };    
 
-        classes.woman.name = "Mulher";
 
         //RELACIONAMENTOS
         var relations = [
-            new uml.Implementation({ source: { id: classes.mammal.id }, target: { id: classes.mammals.id }}),
             new uml.Generalization({ source: { id: classes.man.id }, target: { id: classes.person.id }}),
             new uml.Transition({ source: { id: classes.woman.id }, target: { id: classes.person.id }}),
             new uml.Association({ source: { id: classes.person.id }, target: { id: classes.mammal.id }}),
@@ -286,22 +248,21 @@ export class DrawPapperComponent implements OnInit {
     start();
 
     
-    var svgElement = document.querySelector('#v-2')
+    var svgElement = document.querySelector('#v-2');
+    
     //@ts-ignore
-    var panZoom = svgPanZoom(svgElement)
-    // or
-    //@ts-ignore
-    var pan = svgPanZoom(svgElement, {
-       //viewportSelector: '.svg-pan-zoom_viewport',
+    var panZoom = svgPanZoom(svgElement,{
+        viewportSelector: '.svg-pan-zoom_viewport',
         panEnabled: true,
         controlIconsEnabled: true,
         zoomEnabled: true,
         dblClickZoomEnabled: true,
         mouseWheelZoomEnabled: true,
         preventMouseEventsDefault: true,
-        zoomScaleSensitivity: 0.5,
+        zoomScaleSensitivity: 0.1,
         minZoom: 0.5,
-        maxZoom: 10,
+        maxZoom: 20,
+        handleMouseDown:true,
         fit: true,
         contain: true,
         center: true,
@@ -315,7 +276,6 @@ export class DrawPapperComponent implements OnInit {
         eventsListenerElement: null,
     });
 
-    pan.zoomOut();
 
   }
 

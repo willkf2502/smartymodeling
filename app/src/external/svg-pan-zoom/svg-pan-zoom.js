@@ -62,7 +62,7 @@ module.exports = {
 
 , _createZoomIn: function(instance) {
     var zoomIn = document.createElementNS(SvgUtils.svgNS, 'g');
-    zoomIn.setAttribute('id', 'svg-pan-zoom-zoom-in');
+    zoomIn.setAttribute('id', '<svg-pan-zoom-zoom-in>');
     zoomIn.setAttribute('transform', 'translate(30.5 5) scale(0.015)');
     zoomIn.setAttribute('class', 'svg-pan-zoom-control');
     zoomIn.addEventListener('click', function() {instance.getPublicInstance().zoomIn()}, false)

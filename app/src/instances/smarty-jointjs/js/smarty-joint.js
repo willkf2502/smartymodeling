@@ -31587,7 +31587,7 @@ var umlDiamond = 'M 20 5 L 10 10 L 0 5 L 10 0 z';
 	    }
 	}, {
 	    getClassName: function() {
-	        return [this.get('name'), ];
+	        return ['<<Mandatory>>', this.get('name'), ];
 	    }
 	});
 
