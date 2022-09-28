@@ -1416,9 +1416,15 @@ Sidebar.prototype.addUmlPalette = function(expand)
 	this.setCurrentSearchEntryLibrary('uml');
 	
 	var fns = [
+		//OBJECT
    		this.createVertexTemplateEntry('html=1;', 110, 50, 'Object', 'Object', null, null, dt + 'object instance'),
+
+		//UML INTERFACE
    		this.createVertexTemplateEntry('html=1;', 110, 50, '&laquo;interface&raquo;<br><b>Name</b>', 'Interface', null, null, dt + 'interface object instance annotated annotation'),
-		   this.createVertexTemplateEntry('html=1;', 110, 50, '&laquo;mandatory&raquo;<br><b>Name</b>', 'Mandatory', null, null, dt + 'interface object instance annotated annotation'),
+
+		//UML MANDATORY
+		this.createVertexTemplateEntry('html=1;', 110, 50, '&laquo;mandatory&raquo;<br><b>Name</b>', 'Mandatory', null, null, dt + 'interface object instance annotated annotation'),
+		
 	 	this.addEntry(dt + 'object instance', function()
 		{
 			var cell = new mxCell('Classname', new mxGeometry(0, 0, 160, 90),
